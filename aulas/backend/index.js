@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-app.get('/',(request,response)=>{
+app.get('/users/:id',(request,response) => {
     return response.json({
         evento:'Semana OmniStack',
         versão: '11.0'
